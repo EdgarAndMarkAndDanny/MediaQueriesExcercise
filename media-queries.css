@@ -3,39 +3,98 @@
     margin: 0;
 }
 
+/*mobile view*/
 @media screen and (max-width: 425px) {
     body {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin: 1rem;
-        max-width: 410px;
+        /*max-width: 410px;*/
     }
+
+    /*button*/
     .alert-info {
-        /*min-width: 95%;*/
-    }
-    .alert-info a {
-        border: 1px solid gray;
-        padding: .7rem 5rem;
-        margin: 3rem;
-        background-color: lightblue;
+
+        display: flex;
+        justify-content: center;
         min-width: 95%;
+    }
+
+    .alert-info a {
+        margin: .5rem 0rem;
+        padding: 1rem 8rem;
+        border: 1px solid gray;
+        /*padding: .7rem 5rem;*/
+        /*margin-top: 50px;*/
+        background-color: rgb(204, 255, 254);
+        /*min-width: 95%;*/
         text-decoration: none;
         color: black;
 
     }
+
+    /*header*/
     h1 {
-        margin: 1.5rem;
+        margin: .5rem;
         font-weight: bolder;
         font-size: 4rem;
     }
+
+    /*image */
     .header-img {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .header-img img{
-        max-width: 95%;
 
+    .header-img img {
+        max-width: 100%;
+
+    }
+
+    /*nav bar*/
+    nav {
+        display: flex;
+        /*min-width: 100%;*/
+        justify-content: center;
+    }
+
+    .nav-links {
+        /*min-width: 95%;*/
+        /*justify-content: center;*/
+        text-align: center;
+
+    }
+
+    .nav-links li {
+        margin: 1rem 3rem;
+        padding: 1rem 10rem;
+        background: rgb(204, 204, 204);
+        font-weight: bold;
+        list-style: none;
+        font-size: 1.25rem;
+        align-content: center;
+    }
+
+    /*    sections*/
+    section {
+        margin-top: 2rem;
+    }
+
+    section p {
+        margin-top: 1rem;
+    }
+
+    footer {
+        display: flex;
+        margin: 2rem 0 1rem 0;
+        min-width: 100%;
+        justify-content: flex-start ;/*flex-direction: row;*/
+    }
+
+    footer p {
+        text-align: left;
+/*justify-content: flex-start;*/
     }
 }
